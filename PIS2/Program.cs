@@ -24,13 +24,11 @@ namespace PIS2
             Console.WriteLine(planets.name);
             Console.WriteLine(planets.openingDate);
             Console.WriteLine(planets.radius);
-
             
             PlanetsWithAtmosphere atmos = Logic.ToWithAtmosphere(inputItems);
             PlanetsWithSatellites satellites = Logic.ToWithSatellites(inputItems);
 
-
-            // Console
+            // for commit 
             Console.WriteLine($"\nАтмосфера: {atmos.atmosphere}\n");
             Console.WriteLine($"Кол-во спутников: {satellites.counterOfSatellites}\n");
         } 
